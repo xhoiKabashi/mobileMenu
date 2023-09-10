@@ -1,0 +1,88 @@
+body {
+  padding: 0;
+  margin: 0;
+}
+.nav {
+  height: 80px;
+  border: 2px solid lightgray;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 60px;
+}
+.navItems {
+  height: 35px;
+  fill: lightgray;
+}
+.navItems:hover {
+  fill: black;
+  scale: 1.2;
+}
+
+.left,
+.right {
+  display: flex;
+  gap: 20px;
+}
+.menuContainer {
+  width: 200px;
+  border: 2px solid lightgray;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  font-family: "Times New Roman", Times, serif;
+  color: lightgray;
+  align-items: center;
+}
+
+#bgColor {
+  background-image: url(./triangulos3.jpg);
+  background-position: center;
+  width: 100%;
+  height: 70px;
+  color: black;
+  align-items: center;
+  font-weight:bolder;
+  font-size: 25px;
+  margin-bottom: 20px;
+  display: flex;
+  align-items: end;
+  justify-content: center;
+  padding-bottom: 20px;
+}
+.menuContainer > div:not(:first-child) {
+  padding: 15px;
+  font-size: 20px;
+  align-self: first baseline;
+  margin: 0 0 10px 10px;
+}
+
+.menuContainer > div:not(:first-child):hover {
+  color: black;
+  width: 70%;
+  background-color: #e11d48;
+  border-radius: 30px;
+  color: white;
+}
+
+
+.navBarToggle{
+ display: none;
+}
+
+.text{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.text > h1 {
+    width: 80%;
+    font-size: 26px;
+}
+.displayNone {
+    display: none;
+}
