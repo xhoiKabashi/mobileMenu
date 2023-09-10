@@ -25,8 +25,8 @@ body {
   gap: 20px;
 }
 .menuContainer {
-  width: 200px;
-  border: 2px solid lightgray;
+  width: 300px;
+  border-right: 2px solid lightgray;
   display: flex;
   flex-direction: column;
   justify-content: center;
