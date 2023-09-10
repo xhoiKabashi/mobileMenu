@@ -1,7 +1,10 @@
+/* Reset default margin and padding for the entire body */
 body {
   padding: 0;
   margin: 0;
 }
+
+/* Styling for the navigation bar */
 .nav {
   height: 80px;
   border: 2px solid lightgray;
@@ -10,20 +13,28 @@ body {
   justify-content: center;
   gap: 60px;
 }
+
+/* Styling for navigation bar icons */
 .navItems {
   height: 35px;
   fill: lightgray;
-}
-.navItems:hover {
-  fill: black;
-  scale: 1.2;
+  transition: transform 0.3s; /* Add a smooth transition effect */
 }
 
+/* Hover effect for navigation bar icons */
+.navItems:hover {
+  fill: black;
+  transform: scale(1.2); /* Corrected property for scaling */
+}
+
+/* Styling for the left and right sections of the navigation bar */
 .left,
 .right {
   display: flex;
   gap: 20px;
 }
+
+/* Styling for the menu container */
 .menuContainer {
   width: 300px;
   border-right: 2px solid lightgray;
@@ -31,10 +42,10 @@ body {
   flex-direction: column;
   justify-content: center;
   font-family: "Times New Roman", Times, serif;
-  color: lightgray;
   align-items: center;
 }
 
+/* Styling for the background color in the menu container */
 #bgColor {
   background-image: url(./triangulos3.jpg);
   background-position: center;
@@ -42,21 +53,24 @@ body {
   height: 70px;
   color: black;
   align-items: center;
-  font-weight:bolder;
+  font-weight: bold; /* Corrected property name */
   font-size: 25px;
   margin-bottom: 20px;
   display: flex;
-  align-items: end;
+  align-items: flex-end; /* Corrected alignment value */
   justify-content: center;
   padding-bottom: 20px;
 }
+
+/* Styling for menu items in the menu container */
 .menuContainer > div:not(:first-child) {
   padding: 15px;
   font-size: 20px;
-  align-self: first baseline;
+  align-self: flex-start; /* Changed alignment value */
   margin: 0 0 10px 10px;
 }
 
+/* Hover effect for menu items */
 .menuContainer > div:not(:first-child):hover {
   color: black;
   width: 70%;
@@ -65,24 +79,33 @@ body {
   color: white;
 }
 
-
-.navBarToggle{
- display: none;
+/* Styling for links within menu items */
+div > a {
+  text-decoration: none;
+  color: lightgray;
 }
 
-.text{
-    width: 100%;
-    height: 100%;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    
+/* Hide the navigation bar toggle element by default */
+.navBarToggle {
+  display: none;
 }
 
+/* Styling for the main text content section */
+.text {
+  width: 100%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+/* Styling for the text content */
 .text > h1 {
-    width: 80%;
-    font-size: 26px;
+  width: 80%;
+  font-size: 1.625rem; /* Converted font size to relative unit (rem) */
 }
+
+/* CSS class to hide elements */
 .displayNone {
-    display: none;
+  display: none;
 }
